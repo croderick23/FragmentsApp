@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Emilio</string>
+    <string name="app_name">AstCademic</string>
     <string name="nav_menu_alumnos">Alumnos</string>
     <string name="nav_menu_grupos">Grupos</string>
     <string name="nav_menu_calificaciones">Calificaciones</string>

@@ -51,8 +51,9 @@ public class  ActividadFragment extends Fragment {
             }   */
         }
     };
-/*    private boolean Valida()
+/*    private boolean ValidaPonderacionAct()
     {
+    String passwordInput=textInput
         try {
             usuario = edtNombre.getText  n ().toString();
             password = edtPassword.getText().toString();
