@@ -6,15 +6,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.widget.AppCompatTextView;
 import androidx.fragment.app.Fragment;
 
 import com.example.tienda.R;
 
-public class ActividadFragment extends Fragment {
+public class  ActividadFragment extends Fragment {
     private EditText edtNombreAct;
     private EditText edtPonderacionAct;
     private EditText edtgrupoAct;
@@ -26,36 +26,35 @@ public class ActividadFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) { //Oncreate lo metió todu
-        View v = inflater.inflate(R.layout.fragment_grupos, container, false);
+        View v = inflater.inflate(R.layout.fragment_actividad, container, false);
         edtNombreAct = v.findViewById(R.id.edtNombreAct);
         edtPonderacionAct = v.findViewById(R.id.edtPonderacionAct);
         edtgrupoAct = v.findViewById(R.id.edtGrupoAct);
         edtNombreTutorAct = v.findViewById(R.id.edtNombreTutorAct);
-        btnAgregarAct.setOnClickListener(onClickbtnAgregarAct);
         btnAgregarAct = v.findViewById(R.id.btnAgregarAct);
-        btnEditarAct.setOnClickListener(onClickbtnEditarAct);
+        btnAgregarAct.setOnClickListener(onClickbtnAgregarAct);
         btnEditarAct = v.findViewById(R.id.btnEditarAct);
-        btnEliminarAct.setOnClickListener(onClickbtnEliminarAct);
+        btnEditarAct.setOnClickListener(onClickbtnEditarAct);
         btnEliminarAct = v.findViewById(R.id.btnEliminarAct);
+        btnEliminarAct.setOnClickListener(onClickbtnEliminarAct);
         return v;
     }
 
     View.OnClickListener onClickbtnAgregarAct = new View.OnClickListener() {  //interfaz
         @Override
         public void onClick(View view) {
- /*           if (Valida()) {   //sí true
-                Intent intMain = new Intent(SesionActivity.this, MainActivity.class);
-                startActivity(intMain);
+        /*    if (Valida()) {   //sí true
+                //conexion con base de datos
             }
             else {
-                Toast.makeText(getApplicationContext(), "usuario o contraseña incorrecta", Toast.LENGTH_LONG).show(); //sí no mensaje
+                Toast.makeText(getApplicationContext(), "Formato Incorrecto", Toast.LENGTH_LONG).show(); //sí no mensaje
             }   */
         }
     };
 /*    private boolean Valida()
     {
         try {
-            usuario = edtNombre.getText().toString();
+            usuario = edtNombre.getText  n ().toString();
             password = edtPassword.getText().toString();
         }
         catch(Exception error)

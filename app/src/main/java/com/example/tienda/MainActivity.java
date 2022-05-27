@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import com.example.tienda.fragments.ActividadFragment;
 import com.example.tienda.fragments.AlumnoFragment;
+import com.example.tienda.fragments.AsistenciaFragment;
+import com.example.tienda.fragments.CalificacionesFragment;
 import com.example.tienda.fragments.GruposFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -18,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private AlumnoFragment alumnoFragment;
     private GruposFragment gruposFragment;
     private ActividadFragment actividadFragment;
+    private CalificacionesFragment calificacionesFragment;
+    private AsistenciaFragment asistenciaFragment;
     //endregion
 
     @Override
@@ -30,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         alumnoFragment = new AlumnoFragment();
         gruposFragment = new GruposFragment();
         actividadFragment = new ActividadFragment();
+        asistenciaFragment=new AsistenciaFragment();
+        calificacionesFragment = new CalificacionesFragment();
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContenedor,alumnoFragment).commit();
     }
 
@@ -46,9 +52,17 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContenedor,gruposFragment).commit();
                         Toast.makeText(getApplicationContext(),"Grupos",Toast.LENGTH_SHORT).show();
                         break;
-                    case R.id.nav_calificaciones:
+                    case R.id.nav_actividades:
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContenedor,actividadFragment).commit();
                         Toast.makeText(getApplicationContext(),"Actividad",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.nav_asistencia:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContenedor,asistenciaFragment).commit();
+                        Toast.makeText(getApplicationContext(),"Asistencia",Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.nav_calificaciones:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContenedor,calificacionesFragment).commit();
+                        Toast.makeText(getApplicationContext(),"Calificaciones",Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return true;

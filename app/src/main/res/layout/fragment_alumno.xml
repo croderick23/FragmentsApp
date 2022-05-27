@@ -21,19 +21,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <EditText
         android:id="@+id/edtIdAlm"
-        android:layout_width="179dp"
-        android:layout_height="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="12dp"
         android:ems="10"
         android:hint="ID"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/edtNombreAlm"
         app:layout_constraintEnd_toStartOf="@+id/btnBuscarAlm"
-        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
-
 
     <ImageButton
         android:id="@+id/btnBuscarAlm"

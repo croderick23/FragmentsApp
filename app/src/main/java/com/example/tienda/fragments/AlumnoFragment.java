@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -20,7 +21,7 @@ import com.example.tienda.SesionActivity;
 
 public class AlumnoFragment extends Fragment {
     private EditText edtIdAlm;
-    private Button btnBuscarAlm;
+    private ImageButton btnBuscarAlm;
     private EditText edtNombreAlm;
     private EditText edtApellidoPAlm;
     private EditText edtApellidoMAlm;
@@ -38,7 +39,7 @@ public class AlumnoFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_alumno, container, false);
         edtIdAlm=v.findViewById(R.id.edtIdAlm);
         btnBuscarAlm=v.findViewById(R.id.btnBuscarAlm);
-        btnBuscarAlm.setOnClickListener(onClickbtnAgregarAlm);
+        btnBuscarAlm.setOnClickListener(onClickbtnBuscarAlm);
         edtNombreAlm=v.findViewById(R.id.edtNombreAlm);
         edtApellidoPAlm=v.findViewById(R.id.edtApellidoPAlm);
         edtApellidoMAlm=v.findViewById(R.id.edtApellidoMAlm);

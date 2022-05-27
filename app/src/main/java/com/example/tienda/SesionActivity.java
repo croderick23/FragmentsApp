@@ -29,10 +29,10 @@ private TextView txtvRegistro;
         btnEntrar=findViewById(R.id.btnEntrar);
         btnEntrar.setOnClickListener(onClickEntrar);  //lamada a interfaz al hacer click
         txtvRegistro=findViewById(R.id.txtvRegistro);
-        cargarReferencias();
+        //cargarReferencias();
     }
 
-    private void cargarReferencias() {
+    /*private void cargarReferencias() {
         SharedPreferences preferences=getSharedPreferences(getResources().getString(R.string.strCredenciales),MODE_PRIVATE);
         SharedPreferences.Editor editor=preferences.edit();
 
@@ -40,7 +40,7 @@ private TextView txtvRegistro;
         String password = preferences.getString(getResources().getString(R.string.strPassword),"");
         edtNombre.setText(user);
         edtPassword.setText(password);
-    }
+    }*/
 
     View.OnClickListener onClickEntrar= new View.OnClickListener() {  //interfaz
         @Override
