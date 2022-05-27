@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_background"
+    >
+
+    <TextView
+        android:id="@+id/txtActividad"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="Actividad"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/edtNombreAct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edtNombreAct"
+        android:layout_width="331dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="56dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtPonderacionAct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPonderacionAct"
+        android:layout_width="332dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Ponderación"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtGrupoAct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtGrupoAct"
+        android:layout_width="328dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="Grupo"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/edtNombreTutorAct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNombreTutorAct"
+        android:layout_width="326dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:hint="Nombre Tutor"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnEditarAct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnAgregarAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="56dp"
+        android:text="Agregar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEditarAct"
+        android:layout_width="62dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="56dp"
+        android:text="EDITAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEliminarAct"
+        app:layout_constraintStart_toEndOf="@+id/btnAgregarAct" />
+
+    <Button
+        android:id="@+id/btnEliminarAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="56dp"
+        android:text="ELIMINAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

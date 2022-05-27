@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_alumnos"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_inicio"
+        android:title="Alumnos"
+        />
+    <item android:id="@+id/nav_grupos"
+        android:orderInCategory="102"
+        android:icon="@drawable/ic_busqueda"
+        android:title="Grupos"
+        />
+    <item android:id="@+id/nav_calificaciones"
+        android:orderInCategory="103"
+        android:icon="@drawable/ic_compras"
+        android:title="Calificaciones"
+        />
+    <item android:id="@+id/nav_asistencia"
+        android:orderInCategory="104"
+        android:icon="@drawable/ic_sesion"
+        android:title="Asistencia"
+        />
+    <item android:id="@+id/nav_actividades"
+        android:orderInCategory="104"
+        android:icon="@drawable/ic_sesion"
+        android:title="Actividades"
+        />
+</menu>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Emilio</string>
+    <string name="nav_menu_alumnos">Alumnos</string>
+    <string name="nav_menu_grupos">Grupos</string>
+    <string name="nav_menu_calificaciones">Calificaciones</string>
+    <string name="nav_menu_asistencia">Asistencia</string>
+    <string name="nav_menu_actividades">Actividades</string>
+    <string name="string_txtv_seleccionado">Elemento Seleccionado</string>
+    <string name="strCredenciales">credenciales</string>
+    <string name="strUser">user</string>
+    <string name="strNoUsuarios">No hay usuarios registrados</string>
+    <string name="strPassword">pasword</string>
+</resources>
